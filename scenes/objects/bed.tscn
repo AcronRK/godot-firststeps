@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt6k5wdn5ohp5"]
+
+[ext_resource type="Texture2D" uid="uid://beuehynrw2ndc" path="res://graphics/objects/bed.png" id="1_wt63q"]
+[ext_resource type="Texture2D" uid="uid://dfxabx1qxanqx" path="res://graphics/objects/pillow_large.png" id="2_2ox7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_21nli"]
+size = Vector2(625, 365)
+
+[node name="Bed" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="BedImage" type="Sprite2D" parent="."]
+position = Vector2(513, 326)
+texture = ExtResource("1_wt63q")
+
+[node name="PillowImage" type="Sprite2D" parent="."]
+position = Vector2(616, 320)
+texture = ExtResource("2_2ox7v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(513.5, 325.5)
+shape = SubResource("RectangleShape2D_21nli")

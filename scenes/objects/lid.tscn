@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj3pny21v2duq"]
+
+[ext_resource type="Texture2D" uid="uid://caod6xeiejwtr" path="res://graphics/objects/box/lid.png" id="1_qpuaa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xui26"]
+size = Vector2(367, 164)
+
+[node name="Lid" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="LidImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_qpuaa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_xui26")

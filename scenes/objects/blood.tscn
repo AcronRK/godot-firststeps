@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg5f6iolb0u2q"]
+
+[ext_resource type="Texture2D" uid="uid://blvvxgwryevy0" path="res://graphics/decals/blood.png" id="1_5dckq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Blood" type="Sprite2D" parent="."]
+position = Vector2(520, 290)
+texture = ExtResource("1_5dckq")
