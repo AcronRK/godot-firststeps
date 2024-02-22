@@ -1,0 +1,12 @@
+res://scenes/projectiles/laser.gd
+res://scenes/projectiles/laser.tscn
+res://scenes/player/player.gd
+res://scenes/levels/level.tscn
+res://scenes/player/player.tscn
+res://scenes/houses/house.tscn
+res://scenes/objects/drone.gd
+res://scenes/levels/outside.tscn
+res://scenes/levels/inside.tscn
+res://scenes/levels/level.gd
+res://scenes/levels/outside.gd
+res://scenes/houses/house.gd

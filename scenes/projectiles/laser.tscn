@@ -8,7 +8,7 @@ height = 158.0
 
 [node name="laser" type="Area2D"]
 collision_layer = 8
-collision_mask = 7
+collision_mask = 6
 script = ExtResource("1_xj6yf")
 speed = 2000
 
@@ -19,3 +19,9 @@ texture = ExtResource("1_f5id8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_rl8w0")
+
+[node name="SelfDestructTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="SelfDestructTimer" to="." method="_on_self_destruct_timer_timeout"]

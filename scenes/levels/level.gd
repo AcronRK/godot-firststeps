@@ -1,13 +1,10 @@
 extends Node2D
+class_name LevelParent
 
 # load laser and grenade scene
 var laser_scene: PackedScene = preload("res://scenes/projectiles/laser.tscn")
 var grenade_scene: PackedScene = preload("res://scenes/projectiles/grenade.tscn")
-
-func _on_gate_player_entered_gate(_body):
-	print("player entered")
-
-
+	
 func _on_player_laser(pos, direction):
 	# create scene
 	var laser = laser_scene.instantiate() as Area2D
@@ -24,3 +21,4 @@ func _on_player_grenade(pos, direction):
 	grenade.position = pos
 	grenade.linear_velocity = direction * grenade.speed
 	$Projectiles.add_child(grenade)	
+
