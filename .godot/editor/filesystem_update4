@@ -1,12 +1,9 @@
-res://scenes/projectiles/laser.gd
-res://scenes/projectiles/laser.tscn
-res://scenes/player/player.gd
-res://scenes/levels/level.tscn
-res://scenes/player/player.tscn
-res://scenes/houses/house.tscn
-res://scenes/objects/drone.gd
 res://scenes/levels/outside.tscn
+res://scenes/player/player.gd
+res://scenes/levels/house.tres
+res://scenes/levels/level.tscn
 res://scenes/levels/inside.tscn
-res://scenes/levels/level.gd
-res://scenes/levels/outside.gd
-res://scenes/houses/house.gd
+res://scenes/houses/house.tscn
+res://scenes/objects/light_fan_animation.tscn
+res://scenes/user interface/ui.tscn
+res://scenes/user interface/main_theme.tres
